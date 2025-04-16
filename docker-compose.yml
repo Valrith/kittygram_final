@@ -14,14 +14,14 @@ services:
   backend:
     image: valshir/kittygram_backend/
     volumes:
-      - static:/backend_static
+      - static:/backend_static/
+      - media:/app/media/
     depends_on:
       - db
     env_file: .env
   frontend:
     image: valshir/kittygram_frontend/
     env_file: .env
-    build: ./frontend/
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
