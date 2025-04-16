@@ -121,7 +121,7 @@ jobs:
         with:
           context: ./nginx/
           push: true
-          tags: valshir/kittygram:latest
+          tags: valshir/kittygram_gateway:latest
 
   deploy:
     runs-on: ubuntu-latest
