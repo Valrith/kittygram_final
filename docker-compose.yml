@@ -14,7 +14,7 @@ services:
   backend:
     image: valshir/kittygram_backend
     volumes:
-      - static:/static/
+      - static:/static
       - media:/media
     depends_on:
       - db
